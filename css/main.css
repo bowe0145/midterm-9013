@@ -1,0 +1,349 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Slabo+27px');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+
+h1 {
+    font: bold 3rem 'Slabo', 'Georgia', serif;
+}
+
+h2 {
+    font: bold 2.618rem 'Slabo', 'Georgia', serif;
+}
+
+li,
+p,
+a {
+    font: bold 1.0rem 'Open Sans', 'Helvetica', sans-serif;
+}
+
+pre,
+code,
+kbd {
+    font: normal 1.0rem 'Open Sans Condensed', 'Helvetica', 'sans-serif';
+}
+
+
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+
+body {
+    background-color: #F5F5F5;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    color: #3F8E9C;
+}
+
+header {
+    padding: 1rem;
+    width: 100%;
+    background-image: url('http://loremflickr.com/320/240/chocolate+cake');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 3px solid #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #249ED9;
+}
+
+nav {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+nav>ul {
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+    list-style: none;
+    float: left;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    font: bold 1.618rem 'Open Sans', 'Helvetica', sans-serif;
+    text-align: center;
+    color: #249ED9;
+}
+
+a {
+    font: bold 1.618rem 'Open Sans', 'Helvetica', sans-serif;
+    color: #249ED9;
+}
+
+nav a:active,
+nav a:focus,
+nav a:hover {
+    color: #7BCCF0;
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: #249ED9;
+}
+
+footer a:active,
+footer a:focus,
+footer a:hover {
+    color: #7BCCF0;
+}
+
+main {
+    width: 100%;
+}
+
+.col {
+    float: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+footer {
+    color: #ccc;
+    width: 100%;
+    background-color: #587386;
+    padding: 1rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+section {}
+
+
+/* Medium */
+
+@media screen and (min-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: block;
+        clear: both;
+        background-image: url('http://loremflickr.com/600/50/chocolate+cake');
+        border-bottom: 2px solid black;
+    }
+    nav {
+        width: 90%;
+        display: block;
+        margin: 1rem auto;
+        clear: both;
+        padding: 5px;
+        border: 1px solid black;
+        height: 3rem;
+    }
+    nav li {
+        width: 20%;
+    }
+    nav a {
+        font-size: 2rem;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 1rem;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .col {
+        width: 50%;
+        float: left;
+        margin: 0 auto;
+        padding: 3px;
+    }
+    .col img {
+        width: 60%;
+        float: left;
+    }
+    footer {
+        width: 90%;
+        clear: both;
+        margin: 0 auto;
+    }
+    li,
+    p,
+    a {
+        font: bold 1.5rem 'Open Sans', 'Helvetica', sans-serif;
+    }
+}
+
+
+/* Large */
+
+@media screen and (min-width: 800px) {
+    header {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: block;
+        clear: both;
+        background-image: url('http://loremflickr.com/800/150/chocolate+cake');
+        border-bottom: 2px solid black;
+    }
+    nav {
+        width: 90%;
+        display: block;
+        margin: 1rem auto;
+        clear: both;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+    }
+    nav li a {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 1rem;
+    }
+    main {
+        margin: 5rem auto;
+        width: 90%;
+    }
+    .col {
+        margin: 0 auto;
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .col img {
+        width: 50%;
+        float: left;
+    }
+    footer {
+        width: 100%;
+        clear: both;
+    }
+    li,
+    p,
+    a {
+        font: bold 2rem 'Open Sans', 'Helvetica', sans-serif;
+    }
+}
+
+
+/* Extra Large */
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font: bold 4.236rem 'Slabo', 'Georgia', serif;
+    }
+    header {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        margin-bottom: 1rem;
+        display: block;
+        clear: both;
+        background-image: url('http://loremflickr.com/1200/150/chocolate+cake');
+        border-bottom: 2px solid black;
+    }
+    nav {
+        width: 30%;
+        margin: 0 auto;
+        float: left;
+        border: none;
+    }
+    nav li {
+        width: 100%;
+        margin: 0.5rem auto;
+        float: left;
+        border: none;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 2.5rem;
+    }
+    nav a {}
+    main {
+        margin: 0 auto;
+        width: 70%;
+        float: left;
+    }
+    .col {
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .col img {
+        width: 55%;
+        float: left;
+    }
+    footer {
+        width: 100%;
+        display: block;
+        clear: both;
+    }
+    li,
+    p,
+    a {
+        font: bold 2.5rem 'Open Sans', 'Helvetica', sans-serif;
+    }
+}
